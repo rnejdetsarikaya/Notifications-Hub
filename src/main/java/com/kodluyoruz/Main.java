@@ -9,15 +9,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<User> users = new ArrayList<>();
-        User user = new User();
-        user.setName("User1");
-        user.setEmail("user1@mail.com");
-        users.add(user);
+
+
         Company company = new Company();
         company.setName("Trendyol");
         company.setLang(new Turkish());
-
+        List<User> users = company.createUserGroup(5);
         Email_Constant pack = new Email_Constant();
         Sms_Constant pack2 = new Sms_Constant();
         Email_In_Constant pack3 = new Email_In_Constant();

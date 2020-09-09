@@ -64,4 +64,11 @@ public class Company {
         System.out.println("Current cost: "+this.cost);
 
     }
+
+    public List<User> createUserGroup(int size){
+        List<User> list = new ArrayList<>();
+        for(int i=0;i<size;i++)
+            list.add(new User(i+". user",i+".user@user.com"));
+        return list;
+    }
 }
